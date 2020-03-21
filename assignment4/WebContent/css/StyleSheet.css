@@ -1,0 +1,25 @@
+.order-table {
+	border-collapse: collapse;
+	border:1px black solid;
+}
+
+.order-table-odd {
+	background-color: #d3d3d3;
+	border:1px black solid
+}
+
+.column-1 {
+	border:1px black solid;
+}
+
+.column-2 {
+	border:1px black solid;
+}
+
+.column-3 {
+	border:1px black solid;
+}
+
+.column-4 {
+	border:1px black solid;
+}

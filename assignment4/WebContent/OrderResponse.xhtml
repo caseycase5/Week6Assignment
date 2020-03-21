@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+  <head>
+    <title>
+	JSF Response Page
+	</title>
+  </head>
+  
+  <body>
+  <ui:composition template="/Layouts/commonLayout.xhtml">
+  	  
+  	  <ui:define name="content">
+  	    <h1>Order Response Page</h1>
+  		<p>Hi #{user.firstName}! Your order has been sent! </p>
+  		<f:view>
+  		<form>
+  		<h:commandButton action="#{formController.onBack()}" value="Back" />
+  	    </form>
+  	    </f:view>
+  	    <h:messages />
+  	  </ui:define>
+  	  
+  	</ui:composition>
+    
+  </body>
+</html>
